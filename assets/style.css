@@ -12,9 +12,9 @@ body {
 }
 
 header {
-    line-height: 1.8;
+    line-height: 1.5;
     font-family: PTSans;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     box-shadow: 0 4px 8px 0 rgba(212, 211, 211, 0.2), 0 6px 20px 0 rgba(150, 150, 150, 0.19);
     padding: 10px 16px;
     top: 0;
@@ -65,8 +65,8 @@ nav a:hover {
 }
 
 .hero {
-    margins: 0;
-    padding: 0;
+    margins: 00 10px;
+    padding: 10px;
     height: 100vh;
     background-image: url("./images/brandingLanding.jpg");
     background-size: cover;
