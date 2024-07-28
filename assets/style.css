@@ -35,10 +35,13 @@ header h1 {
     font-weight: 400;
     font-style: normal;
 }
+h6 {
+    font-size: 0.75rem;
+}
 
 .sColor {
     color: grey;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .secondStyle {
@@ -65,7 +68,7 @@ nav a:hover {
 }
 
 .hero {
-    margins: 00 10px;
+    /* margin: 0 10px; */
     padding: 10px;
     height: 100vh;
     background-image: url("./images/brandingLanding.jpg");
@@ -74,7 +77,280 @@ nav a:hover {
     background-repeat: no-repeat;
 }
 
+.hero2{
+    /* margin: 0 10px; */
+    padding: 10px;
+    height: 100vh;
+    background-image: url("./images/template.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 main {
     padding: 16px;
     background-color: rgb(31, 30, 30);
+}
+#myBtn {
+    /* display: none; */
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: rgb(56, 51, 51);
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 30px;
+    /* Rounded corners */
+    font-size: 10px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+
+
+/* Cards are stacked on top of each other at 768px or smaller */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 16px;
+    }
+
+    .sColor {
+        font-size: 18px;
+        color: charcoal;
+    }
+
+    header h2 {
+        font-size: 12px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    .i-phone h3 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    nav {
+        line-height: 1.1;
+        width: 95%;
+        margin: 0 auto;
+
+    }
+
+    nav a {
+        font-size: 10px;
+        margin-right: 2px;
+    }
+
+    .btn-group button {
+        font-size: 10px;
+        line-height: 1.1;
+    }
+
+    nav div li a {
+        font-size: 10px;
+    }
+/*     
+    .pAbout h2 {
+        font-size: 14px;
+    } */
+    .pAbout h3 {
+        font-size: 12px;
+    }
+
+    .pAbout div p{
+        font-size: 11px;
+    }
+    .aboutFirst {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .aboutFirst div p {
+        width: 100%;
+    }
+
+    .aboutMore{
+        display: flex;
+        flex-flow: column;
+      
+    }
+
+    .aboutMore div p {
+        width: 100%;
+    }
+
+    .blogMore {
+        width: 100%;
+        /* margin: 0 auto 0 22%; */
+        display: flex;
+        flex-flow: column;
+    
+    }
+    .contactMore {
+        width: 100%;
+        /* margin: 0 auto 0 22%; */
+        display: flex;
+        flex-flow: column;
+    
+    }
+    .contactXtra {
+        width: 100%;
+    }
+
+    .about-image {
+        min-height: 175px;
+        width: 100%;
+        margin: 5px;
+    }
+
+    .myPicx {
+        min-height: 175px;
+        width: 100%;
+        margin: 5px;
+    }
+
+    .mediaSpecial row {
+        margin: 0 auto;
+    }
+
+
+    .mainTop h2 {
+        font-size: 14px;
+        margin-right: 10%;
+    }
+
+    .boxes {
+
+        justify-content: center;
+    }
+
+    .boxitem {
+        width: 50%;
+        min-height: 100px;
+        max-height: 100px;
+        background-size: 75%;
+    }
+
+    .boxitem h3 {
+        text-align: center;
+        font-size: 9px;
+        font-weight: bolder;
+
+    }
+
+    .intro h4 {
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .intro div p {
+        font-size: 11px;
+        width: 88%;
+    }
+
+    .allImg {
+        display: none;
+    }
+
+    .mainHow {
+        flex-flow: column;
+        align-content: center;
+        width: 100%;
+        /* margin-left: 20%; */
+        font-size: small;
+    }
+
+    /* .mainHow h2 {
+        font-size: 16px;
+        font-weight: bolder;
+    } */
+
+    .mainHow h3 {
+        font-size: 18px;
+        font-weight: bold;
+        
+    }
+
+    .howIt {
+        flex-flow: column;
+        align-content: center;
+        width: 100%; 
+       
+    }
+
+    .howIt>h5 {
+        color: rgb(54, 53, 53);
+    }
+
+    .howIt div p {
+        font-size: 14px;
+        color: rgb(49, 48, 48);
+    }
+
+    .topBtn {
+        margin-right: 20%;
+    }
+
+    /* .classicbw {
+        background-image: none;
+    } */
+
+    .classicbw:hover {
+        background-image: none;
+    }
+
+    /* .chroma {
+        background-image: none;
+    } */
+
+    .chroma:hover {
+        background-image: none;
+    }
+
+    /* .luxe {
+        background-image: none;
+    } */
+
+    .luxe:hover {
+        background-image: none;
+    }
+
+    /* .outdoor {
+        background-image: none;
+    } */
+
+    .outdoor:hover {
+        background-image: none;
+    }
+
+
+
+    footer {
+        display: none;
+
+    }
+
 }
