@@ -21,7 +21,7 @@ header {
     left: 0;
     /* display: flex; */
     width: 100%;
-   
+
 }
 
 header h1 {
@@ -35,6 +35,7 @@ header h1 {
     font-weight: 400;
     font-style: normal;
 }
+
 h6 {
     font-size: 0.75rem;
 }
@@ -77,12 +78,11 @@ nav a:hover {
     background-repeat: no-repeat;
 }
 
-.hero2{
+.hero2 {
     /* margin: 0 10px; */
-    padding: 10px;
-    height: 100vh;
+    height: 80vh;
     background-image: url("./images/template.jpg");
-    background-size: cover;
+    background-size: 98%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -91,6 +91,29 @@ main {
     padding: 16px;
     background-color: rgb(31, 30, 30);
 }
+
+.mission {
+    font-size: 2rem;
+}
+.headshot {
+    max-height: 200px;
+    min-height: 200px;
+    margin: 2px; 
+}
+.brandingImg {
+    margin:2px;
+    max-height: 200px;
+    min-height: 200px;
+}
+.commImg {
+    margin: 2px;
+    max-height: 200px;
+    min-height: 200px;
+}
+.contactMore {
+    margin: 0 auto;
+}
+
 #myBtn {
     /* display: none; */
     /* Hidden by default */
@@ -128,18 +151,22 @@ main {
 
 
 /* Cards are stacked on top of each other at 768px or smaller */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 728px) {
     header h1 {
-        font-size: 16px;
+        font-size: 10px;
     }
 
     .sColor {
-        font-size: 18px;
+        font-size: 14px;
         color: charcoal;
     }
 
+    .vColor {
+        font-size: 14px;
+    }
+
     header h2 {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     header p {
@@ -147,7 +174,7 @@ main {
     }
 
     .i-phone h3 {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: bold;
     }
 
@@ -163,25 +190,19 @@ main {
         margin-right: 2px;
     }
 
-    .btn-group button {
-        font-size: 10px;
-        line-height: 1.1;
+
+    main .mission {
+        font-size: .75rem;
     }
 
-    nav div li a {
-        font-size: 10px;
-    }
-/*     
-    .pAbout h2 {
-        font-size: 14px;
-    } */
     .pAbout h3 {
         font-size: 12px;
     }
 
-    .pAbout div p{
+    .pAbout div p {
         font-size: 11px;
     }
+
     .aboutFirst {
         display: flex;
         flex-flow: column;
@@ -191,10 +212,10 @@ main {
         width: 100%;
     }
 
-    .aboutMore{
+    .aboutMore {
         display: flex;
         flex-flow: column;
-      
+
     }
 
     .aboutMore div p {
@@ -206,15 +227,17 @@ main {
         /* margin: 0 auto 0 22%; */
         display: flex;
         flex-flow: column;
-    
+
     }
+
     .contactMore {
         width: 100%;
         /* margin: 0 auto 0 22%; */
         display: flex;
         flex-flow: column;
-    
+
     }
+
     .contactXtra {
         width: 100%;
     }
@@ -291,14 +314,14 @@ main {
     .mainHow h3 {
         font-size: 18px;
         font-weight: bold;
-        
+
     }
 
     .howIt {
         flex-flow: column;
         align-content: center;
-        width: 100%; 
-       
+        width: 100%;
+
     }
 
     .howIt>h5 {

@@ -18,6 +18,29 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Branding by Sandra</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+                publicKey: "vzrGtqwtoch9nvFeL",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service_ygfchmo', 'contact_form', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -52,9 +75,9 @@
         <div class="container-fluid text-center">
             <!-- <main class="container text-center mainContact"> -->
             <div class="row">
-                <h2>Let's Get In Touch</h2>
-                <div class="col-6">
-                    <img src="./assets/images/IMG_3721.jpg" style="width: 75%" alt="">
+                <h2>Amazing Images Enhances Your Brand</h2>
+                <div class="col-6 mt-5">
+                    <img src="./assets/images/Haley2.jpg" style="width: 75%" alt="">
                 </div>
 
 
@@ -63,7 +86,8 @@
                     <h2>Here are ways to get in touch</h2>
                     <div class="mt-3">
                         <h3>Call me directly:</h3>
-                        <p style="font-weight: bolder;">Let's talk, call me! office: 865-724-1092 or mobile:
+                        <p style="font-weight: bolder;">You have Questions, I have answers. </p>
+                        <p> Call office: 865-724-1092 or mobile:
                             865-696-1106</p>
                     </div>
 
@@ -79,21 +103,17 @@
                             <h4>Or by Email</h4>
                             <p>Email directly toosandra@gmail.com or use the form below:</p>
                             <h2>Send an Inquiry</h2>
-                            <form id="contact-form" class="bg-black d-flex flex-column">
-                                <label>First and Last Name</label>
-                                <input class="bg-black text-white" type="text" name="user_name"
-                                    placeholder="Enter Name">
+                            <form id="contact-form">
+                                <!-- To simplify the tutorial, the value is static. -->
+                                <input type="hidden" name="contact_number" value="697483">
+                                <label>Name</label>
+                                <input type="text" name="user_name">
                                 <label>Email</label>
-                                <input class="bg-black text-white" type="email" name="user_email"
-                                    placeholder="Enter Email">
+                                <input type="email" name="user_email">
                                 <label>Message</label>
-                                <textarea class="bg-black text-white" name="message"
-                                    placeholder="Enter Message"></textarea>
-
-                                <input class="bg-primary mt-3" style="border-radius: 50%; width: 25%; margin: 0 auto;"
-                                    type="submit" value="Send">
+                                <textarea name="message"></textarea>
+                                <input type="submit" value="Send">
                             </form>
-
                         </div>
                     </div>
                 </div>
@@ -102,19 +122,16 @@
         </div>
 
 
-        <!-- The Modal
-                <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
-                </div>
-                <button onclick="topFunction()" id="myBtn" class="topBtn" title="Go to top">TOP</button>
-            </main> -->
 
+
+        </div>
+        <div>
+            <button onclick="topFunction()" id="myBtn" class="topBtn" title="Go to top">UP</button>
         </div>
     </main>
     <footer>
-        <button onclick="topFunction()" id="myBtn" class="topBtn" title="Go to top">UP</button>
+        <p class=" row mt-3 p-2"> (c) Copyright 2024 Sandra Smith Photography | All rights Reserved | Designed by Sandra
+            Smith</p>
     </footer>
 
 
@@ -125,18 +142,9 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
 
-    <script src="./assets/js/contact.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <!-- <script src="./assets/js/info.js"></script> -->
 
-    <script type="text/javascript">
-        (function () {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init({
-                publicKey: "4R6ERG61r89-bjke9",
-            });
-        })();
-    </script>
+
 
 </body>
 
